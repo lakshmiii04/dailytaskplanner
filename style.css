@@ -1,0 +1,163 @@
+/* ================================
+   GENERAL STYLES
+================================ */
+
+body {
+    background-color: #f5f7fb;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+h1 {
+    color: #172b4d;
+}
+
+#currentDate {
+    font-size: 16px;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+}
+
+
+/* ================================
+   TASK INPUT
+================================ */
+
+#taskInput {
+    padding: 12px;
+}
+
+#taskInput:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+
+/* ================================
+   FILTER BUTTONS
+================================ */
+
+.filter-btn {
+    min-width: 100px;
+}
+
+
+/* ================================
+   TASK LIST
+================================ */
+
+.task-item {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+/* Task text */
+
+.task-text {
+    flex: 1;
+    word-break: break-word;
+    font-size: 16px;
+}
+
+
+/* Completed task */
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+/* ================================
+   TASK ACTION BUTTONS
+================================ */
+
+.task-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.task-actions button {
+    width: 38px;
+    height: 38px;
+}
+
+
+/* ================================
+   CHECKBOX
+================================ */
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+/* ================================
+   EMPTY MESSAGE
+================================ */
+
+#emptyMessage {
+    background-color: #ffffff;
+}
+
+
+/* ================================
+   EDIT INPUT
+================================ */
+
+.edit-input {
+    flex: 1;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .task-item {
+        padding: 12px;
+    }
+
+    .task-actions button {
+        width: 34px;
+        height: 34px;
+    }
+
+    .filter-btn {
+        min-width: 90px;
+    }
+}
